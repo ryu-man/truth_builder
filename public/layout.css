@@ -1,0 +1,134 @@
+.row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    /* height: auto; */
+  }
+  
+  .row.root {
+    max-height: -webkit-fill-available;
+  }
+  
+  .row.gap > * {
+    margin: 0 0.4em;
+  }
+  .row.gap > :first-child {
+    margin: 0 0.4em 0 0;
+  }
+  .row.gap > :last-child {
+    margin: 0 0 0 0.4em;
+  }
+  .row.end {
+    justify-content: flex-end;
+  }
+  .row.align-baseline {
+    align-items: baseline;
+  }
+  /* .row > div:first-child {
+    margin:  0 .1rem 0 0 !important;
+  }
+  .row > div:last-child{
+    margin:  0 0 0 .1rem !important;
+  
+  } */
+  /* .row > :not(:nth-child(0)):not(:nth-last-child()) {
+    margin: 0 .1rem 0 .1rem !important;
+  } */
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    /* height: auto; */
+  }
+  .column.root {
+    max-height: -webkit-fill-available;
+  }
+  .column.inline {
+    display: inline-flex;
+  }
+  
+  .column.gap > * {
+    margin: 0.4em 0;
+  }
+  .column.gap > :first-child {
+    margin: 0 0 0.4em 0;
+  }
+  .column.gap > :last-child {
+    margin: 0.4em 0 0 0;
+  }
+  .column.end {
+    justify-content: flex-end;
+  }
+  .column.center-align {
+    align-items: center;
+  }
+  .row > .flex,
+  .column > .flex {
+    flex: 1;
+  }
+  .noflex {
+    flex: none !important;
+  }
+  .container {
+    padding: 0.4em;
+  }
+  .wrapper {
+    padding: 1em;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  .centered-vertically {
+    align-items: center;
+  }
+  .stretch {
+    align-items: stretch !important;
+  }
+  .space-between {
+    justify-content: space-between !important;
+  }
+  .space-arround {
+    justify-content: space-around;
+  }
+  .space-evenly {
+    justify-content: space-evenly;
+  }
+  .center {
+    justify-content: center;
+  }
+  .align-end {
+    align-items: flex-end;
+  }
+  .align.end {
+    align-items: flex-end;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .align.center {
+    align-items: center;
+  }
+  .space.between {
+    justify-content: space-between;
+  }
+  .space.arround {
+    justify-content: space-around;
+  }
+  .space.evenly {
+    justify-content: space-evenly;
+  }
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .text.center {
+    text-align: center;
+  }
+  .text.end {
+    text-align: end;
+  }
+  .text.justify {
+    text-align: justify;
+  }
